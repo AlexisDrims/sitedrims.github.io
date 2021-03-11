@@ -1,0 +1,398 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DRIMS</title>
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/fonts.css">
+
+    </head>
+    <body>
+        <noscript>
+            <div class="error message">
+                <p>We have detected that javascript is disabled.</p>
+                <p>This application requires JavaScript to be enabled. Here are <a href="http://www.enable-javascript.com/" target="_blank">instructions on how to enable JavaScript</a> in your web browser.</p>
+            </div>    
+        </noscript>
+        <div class="main-frame" style="display:none">
+            <header>
+                <div class="title-bar">
+                    <a href="/"><img class="brand-logo title-bar-left" src="imgs/ui/drims-logo.png" alt="Drims"></a>
+                    <a class="title-bar-right" data-toggle="menuBar">
+                        <svg version="1.1" id="burger-icon" class="burger-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="24px" height="19.798px" viewBox="0 0 24 19.798" xml:space="preserve">
+                            <path class="top-line" fill="#666666" d="M0,0l24,0v4L0,4L0,0z"/>
+                            <path class="mid-line" fill="#666666" d="M0,7.899l24,0v4l-24,0L0,7.899z"/>
+                            <path class="bottom-line" fill="#666666" d="M0,15.799l24,0v4l-24,0L0,15.799z"/>
+                        </svg>
+                    </a>
+                </div>
+                <hr />
+            </header>
+
+            <nav class="main" id="menuBar" data-toggler=".expanded">
+                <ul class="menu vertical text-right" >
+                    <li><a href="index.html"><span class="circle left"></span><span>Accueil</span><span class="circle right"></span></a></li>
+                    <li><a href="nous-decouvrir.html"><span class="circle left"></span><span>Nous découvrir</span><span class="circle right"></span></a></li>
+                    <li><a class="active"><span class="circle left"></span><span>Que fait-on</span><span class="circle right"></span></a></li>
+                    <li><a href="devenir-consultant.html"><span class="circle left"></span><span>Devenir consultant</span><span class="circle right"></span></a></li>
+                    <li><a href="etre-client.html"><span class="circle left"></span><span>Être client</span><span class="circle right"></span></a></li>
+                    <li><a href="index.html?section=1"><span class="circle left"></span><span>Nous rencontrer</span><span class="circle right"></span></a></li>
+                    <li><a href="devenir-consultant.html?section=1"><span class="circle left"></span><span>Offres d'emploi</span><span class="circle right"></span></a></li>
+                    <li><a href="http://www.drims-academy.fr/" target="_blank"><span class="circle left"></span><span>Le Blog</span><span class="circle right"></span></a></li>
+                </ul>
+                <ul class="social-media no-bullet text-center">
+                    <li><a href="https://www.facebook.com/DRiMS-427529737328889/info/?tab=page_info" target="_blank"><img src="imgs/ui/circle-facebook-gray.png"></a></li>
+                    <li><a href="https://www.linkedin.com/company/drims" target="_blank"><img src="imgs/ui/circle-linkedin-gray.png"></a></li>
+                    <li><a href="http://www.viadeo.com/fr/company/drims" target="_blank"><img src="imgs/ui/circle-viadeo-gray.png"></a></li>
+                </ul>
+            </nav>
+
+            <section id="que-fait-on">
+                <div id="start-panel">
+                    <div class="start-title">
+                        <h1 class="text-center">que fait-on ?</h1>
+                        <hr />
+                        <div class="text-center sub-title">Nous accompagnons vos ambitions !</div>
+                    </div>
+                    <a href="nous-decouvrir.html" class="nav-arrow arrow-left show-for-medium"></a>
+                    <a href="devenir-consultant.html" class="nav-arrow arrow-right show-for-medium"></a>
+                </div>
+                <div id="content-panel">
+                    <div class="mosaic row">
+                        <div class="medium-6 columns item" item-id="methodologie-agilite" data-open="details-popin"><img src="imgs/thumbs/agilite.jpg"><div class="image-overlay text-right"><div><h3>agilité</h3></div></div></div>
+                        <div class="medium-6 columns item"  item-id="digital" data-open="details-popin"><img src="imgs/thumbs/mobilite.jpg"><div class="image-overlay text-right"><div><h3>Digital</h3></div></div></div>
+                        <div class="medium-4 columns item"  item-id="banque-finance-assurance" data-open="details-popin"><img src="imgs/thumbs/banques.jpg"><div class="image-overlay text-right"><div><h3>banque<br />finance<br />assurance</h3></div></div></div>
+                        <div class="medium-4 columns item"  item-id="sports" data-open="details-popin"><img src="imgs/thumbs/sports.jpg"><div class="image-overlay text-right"><div><h3>sports</h3></div></div></div>
+                        <div class="medium-4 columns item"  item-id="centre-de-services" data-open="details-popin"><img src="imgs/thumbs/services.jpg"><div class="image-overlay text-right"><div><h3>Centre de services</h3></div></div></div>
+                        <div class="medium-6 columns item"  item-id="technique" data-open="details-popin"><img src="imgs/thumbs/technique.jpg" width="700" height="469"><div class="image-overlay text-right"><div><h3>technique</h3></div></div></div>
+                        <div class="medium-6 columns item"  item-id="conseils" data-open="details-popin"><img src="imgs/thumbs/conseils.jpg"><div class="image-overlay text-right"><div><h3>conseils</h3></div></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="row">
+                <div class="logo medium-3 large-2 columns"><img src="imgs/ui/drims-logo-small-gray.png"><span>© 2021 DRiMS</span></div>
+                <nav class="large-8 columns show-for-large">
+                    <ul class="no-bullet text-center">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="nous-decouvrir.html">Nous découvrir</a></li>
+                        <li><a class="active">Que fait-on</a></li>
+                        <li><a href="devenir-consultant.html">Devenir consultant</a></li>
+                        <li><a href="etre-client.html">Être client</a></li>
+                        <li><a href="index.html?section=1">Nous rencontrer</a></li>
+                        <li><a href="devenir-consultant.html?section=1">Offres d'emploi</a></li>
+                        <li><a href="mention-legales.html">Mentions légales</a></li>
+                    </ul>
+                </nav>
+
+                <div class="media-sociaux medium-3 large-2 columns text-right show-for-medium">
+                    <a href="https://www.facebook.com/DRiMS-427529737328889/info/?tab=page_info" target="_blank"><img src="imgs/ui/sm-facebook-gray.png"></a>
+                    <a href="https://www.linkedin.com/company/drims" target="_blank"><img src="imgs/ui/sm-linkedin-gray.png"></a>
+                    <a href="http://www.viadeo.com/fr/company/drims" target="_blank"><img src="imgs/ui/sm-viadeo-gray.png"></a>
+                </div>
+            </footer>
+        </div>
+
+        <div id="loader" style="display:none">
+            <div>
+                <img src="imgs/loader.gif">
+            </div>
+        </div>
+
+        <!-- POPIN DETAILS -->
+        <div class="reveal full row que-fait-on" id="details-popin" data-reveal>
+            <div id="background-image-holder" class="medium-4 columns details-cta" style="">
+            </div>
+            <div class="medium-8 columns details-infos">
+                <div class="header">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="37.5px" height="37.5px" viewBox="0 0 37.5 37.5" enable-background="new 0 0 37.5 37.5" xml:space="preserve" data-close="">
+                        <path fill="#FFFFFF" d="M18.75,0C8.395,0,0,8.395,0,18.75S8.395,37.5,18.75,37.5c10.355,0,18.75-8.395,18.75-18.75S29.105,0,18.75,0
+                                                z M25.649,23.678l-1.971,1.971l-4.928-4.928l-4.928,4.929l-1.972-1.972l4.928-4.928l-4.928-4.928l1.972-1.971l4.928,4.928
+                                                l4.928-4.928l1.971,1.971l-4.928,4.928L25.649,23.678z"></path>
+                    </svg>
+                    <h5>banque / finance / assurance</h5>
+                    <p class="text-header">Nous apportons notre savoir-faire fonctionnel et technique sur la majeure partie des environnements Banque Finance et Assurances tels que :</p>
+                </div>
+                <div class="popin-body">
+                    <ul>
+                        <li class="vertical-line"></li>
+                        <li class="block-a item">
+                            <div class="block-dot"></div>
+                            <h5>Banque de financement et d’investissement</h5>
+                            <p id="#text-text">Activités de trading et de vente sur tous les marchés (le change, les matières premières, les dérivés taux, les dérivés actions…), expertise de progiciels financiers (Calypso, Murex, Summit, Sophis, Kondor+…)</p>
+                        </li>
+                        <li class="block-b"> <div class="block-dot"></div>
+                            <h5>Asset management</h5>
+                            <p>Private equity, hedge funds, produits structurés, solutions ALM, gestion des risques</p>
+                        </li>                
+                        <li class="block-c"> <div class="block-dot"></div>
+                            <h5>Securities services</h5>
+                            <p>Global custody, transmissions d’ordres de bourse, opérations de règlement-livraison, calculs de rentabilité, SEPA</p>
+                        </li>
+                        <li class="block-d"> <div class="block-dot"></div>
+                            <h5>Banque de détail</h5>
+                            <p>Banque multi-canal, mutualisation de plateformes de traitement, rationalisation de processus front et back, intégration et adaptation de nouveaux systèmes, cash management / moyens de paiement / e-banking</p>
+                        </li>
+                        <li class="block-e"> <div class="block-dot"></div>
+                            <h5>Assurance</h5>
+                            <p>La performance et l’innovation pour un Système d'Information plus performant au service de l'IARD, de l'Epargne, de la Santé ainsi qu'auprès des Instituts de Retraite et de Prévoyance</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END POPIN DETAILS -->
+
+
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/what-input/what-input.min.js"></script>
+        <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+
+        <script src="js/isMobile.min.js"></script>
+        <script src="js/jquery.drims.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            var datas = {"items" : [{
+                img:"backgrounds/banques.jpg",
+                id:"banque-finance-assurance",
+                name:"Banque Finance Assurance",
+                text:"Nous apportons notre savoir-faire fonctionnel et technique sur la majeure partie des environnements Banque Finance et Assurances tels que :",
+                datas:[{
+                    "title" : "Banque de financement et d’investissement",
+                    "text" : "Activités de trading et de vente sur tous les marchés (le change, les matières premières, les dérivés taux, les dérivés actions…), expertise de progiciels financiers (Calypso, Murex, Summit, Sophis, Kondor+…).",
+                    top:0
+                    },
+                    {
+                    "title" : "Asset management",
+                    "text" : "Private equity, hedge funds, produits structurés, solutions ALM, gestion des risques.",
+                    top:149
+                    },
+                    {
+                    "title" : "Securities services",
+                    "text" : "Global custody, transmissions d’ordres de bourse, opérations de règlement-livraison, calculs de rentabilité, SEPA.",
+                    top:256
+                    },
+                    {
+                    "title" : "Banque de détail",
+                    "text" : "Banque multi-canal, mutualisation de plateformes de traitement, rationalisation de processus front et back, intégration et adaptation de nouveaux systèmes, cash management / moyens de paiement / e-banking.",
+                    top:339
+                    },
+                    {
+                    "id" : "assurance",
+                    "title" : "Assurance",
+                    "text" : "La performance et l’innovation pour un Système d'Information plus performant au service de l'IARD, de l'Epargne, de la Santé ainsi qu'auprès des Instituts de Retraite et de Prévoyance.",
+                    top:450
+                    }]
+                },
+                {
+                id:"methodologie-agilite",
+                img:"backgrounds/qfo-Agilite.jpg",
+                name:"Méthodologie, Agilité",
+                text:"La meilleure méthode est celle qui est la plus adaptée à votre environnement humain, métier, technique et organisationnel, celle qui vous convient.",
+                datas:[{
+                    "title" : "Nos objectifs dans la production des livrables",
+                    "text" : "Appréhender et affiner au mieux vos besoins tout au long du cycle de réalisation du projet, limiter les délais de livraison (Time To Market), éviter l’obsolescence prématurée, assurer efficacement le rétablissement en cas de dysfonctionnement (Time To Repair)."
+                    },
+                    {
+                    "title" : "Delivery Center",
+                    "text" : "Comme nous sommes formés aux méthodes agiles, nous avons mis en place un delivery center. Chaque semaine ou chaque fin de sprint, le team leader envoie un lien aux utilisateurs finaux pour noter la qualité du delivery center en ligne via un site web.",
+                    top:90
+                    },
+                    {
+                    "title" : "Méthodes Agiles",
+                    "text" : "Avec votre implication, pour une plus grande réactivité (Scrum, Kanban, XP).",
+                    top:289
+                    },
+                    {
+                    "title" : "Lean Startup",
+                    "text" : "Vérification-validation par l’expérimentation-la mesure en lien fort avec les utilisateurs.",
+                    top:371
+                    },
+                    {
+                    "title" : "Concepts de coding",
+                    "text" : "Feature flipping, coding Standard, Test Driven Development, Change Driven Development, Pair programming, Refactoring, Continuous integration."
+                    }]
+                },
+                {
+                id:"centre-de-services",
+                    img:"backgrounds/centre-services.jpg",
+                name:"Centre de Services",
+                text:"Pour étoffer notre offre de prestations, nous avons développé un centre de service dédié.",
+                datas:[{
+                    "id" : "assistance-technique",
+                    "title" : "L’assistance technique",
+                    "text" : "Cette entité orientée sur les nouvelles technologies vous accompagne dans la réalisation de vos projets métier, le maintien en condition opérationnelle de vos applicatifs et leur maintenance curative et évolutive."
+                    },
+                    {
+                    "id" : "une-etroite-collaboration-avec-vous",
+                    "title" : "Une étroite collaboration avec vous",
+                    "text" : "Vos objectifs sont nos objectifs, nous sommes avec vous pour : vous conseiller, vous épauler, intégrer ou prendre en charge la réalisation de vos projets de développement applicatif sur mesure ou d’architecture de votre système d’information.",
+                    top:58
+                    },
+                    {
+                    "id" : "accompagnement-au-changement",
+                    "title" : "L’accompagnement au changement",
+                    "text" : "L’accompagnement à la transformation d’entreprise, l’accompagnement au changement de projets SI, l’évaluation des compétences techniques, managériales ou relationnelles, le coaching d’équipe ou individuel.",
+                    top:200
+                    },
+                    {
+                    "id" : "le-succes-des-projets",
+                    "title" : "Le succès des projets",
+                    "text" : "L’expertise métier - Les compétences techniques - Le sens du service - L’écoute - La capacité d’analyse - La méthodologie - L’aptitude à identifier les zones de risque dans la mise en œuvre technique des besoins exprimés dans les cahiers des charges.",
+                    top:300
+                    },
+                    {
+                    "id" : "une-offre-flexible-en-fonction-de-vos-besoins",
+                    "title" : "Une offre flexible en fonction de vos besoins",
+                    "text" : "Au forfait, en mode TMA ou assistance technique plus ponctuelle, toujours dans un esprit de service et de partenariat."
+                    }]
+                },
+                {
+                id:"sports",
+                    img:"backgrounds/sports.jpg",
+                name:"Sports",
+                text:"Forts de plus de quinze ans d’expérience dans le secteur du sport, nous vous apportons notre expertise et vous accompagnons sur vos projets SI.",
+                datas:[{
+                    "title" : "L’équipe projet",
+                    "text" : "Bâtie autour de passionnés de sport qui ont développé, depuis une quinzaine d’années et en complément de leurs compétences techniques et méthodologiques, une expertise métier dans le domaine sportif et plus particulièrement dans le monde des fédérations sportives."
+                    },
+                    {
+                    "title" : "Notre expertise",
+                    "text" : "Au-delà des aspects fonctionnels, notre expertise intègre la connaissance des spécificités organisationnelles liées à la prise en compte des exigences de mobilité et d’intuitivité induites par la pratique du sport et à la diversité des populations visées.",
+                        top:74
+                    },
+                    {
+                    "title" : "Pour tous les acteurs du SI",
+                    "text" : "Notre expertise s’adresse à tous les acteurs du sport : Siège, Instances régionales (ligues, comités régionaux ou territoriaux), Comités départementaux, Officiels, Clubs / Adhérents, Grand public.",
+                        top:240
+                    },
+                    {
+                    "title" : "Un périmètre étendu",
+                    "text" : "Notre expertise recouvre l’ensemble des données et fonctions institutionnelles, à savoir les structures fédérales, l’organisation et le suivi sportif des compétitions, les services aux clubs et associations (interactions avec les instances fédérales, organisation interne), les services aux licenciés et au Grand Public."
+                    },
+                    {
+                    "title" : "Un partenariat privilégié",
+                    "text" : "Au-delà du développement d’application sur mesure, DRiMS se positionne aujourd’hui comme un partenaire privilégié des fédérations, à même de les accompagner dans la structuration de leur SI et dans leur ambition d’en développer la promotion et l’exposition auprès de leurs membres comme de leurs « consommateurs » externes."
+                    }]
+                },
+                {
+                id:"digital",
+                    img:"backgrounds/digital.jpg",
+                name:"Digital",
+                text:"La digitalisation est un enjeu majeur et nécessite le développement d’un écosystème adapté et performant pour répondre à l’ensemble des nouveaux besoins des entreprises.",
+                datas:[{
+                    "title" : "Les enjeux",
+                    "text" : "Une transformation de la relation client (vers une relation client digitale, multicanale et personnalisée), une expérience utilisateur simplifiée (parcours client cohérent), une forte augmentation du volume de données, toujours plus nombreuses et hétérogènes."
+                    },
+                    {
+                    "title" : "La transformation digitale",
+                    "text" : "Ces phases de transformation impliquent des changements importants, d’un point de vue organisationnel mais aussi technologique. Nous sommes présents pour vous accompagner au cours des différentes phases de vos projets grâce à nos compétences techniques et fonctionnelles. ",
+                        top:58
+                    },
+                    {
+                    "title" : "Mobilité",
+                    "text" : "Les terminaux connectés se sont banalisés, ils embarquent des GPS et autres appareils photos qui enrichissent encore leurs capacités d’interactivité."
+                    },
+                    {
+                    "title" : "Smartphones et tablettes",
+                    "text" : "De nombreux outils peuvent à présent être utilisés comme un prolongement de votre système d'information : pour rester connecté en toute occasion, consulter des informations en dehors de votre bureau, sans pour autant avoir accès à votre ordinateur, pour faciliter l'acquisition de données sur le terrain, pour gagner en visibilité."
+                    },
+                    {
+                    "title" : "Notre savoir-faire",
+                    "text" : "Nous vous proposons différentes solutions, du développement d'applications natives à celui d'applications hybrides en passant par du design adapté (webapp). Nous saurons vous accompagner dans votre choix en fonction de vos besoins, de vos exigences et contraintes spécifiques."
+                    }]
+                },
+                {
+                id:"conseils",
+                    img:"backgrounds/conseils.jpg",
+                name:"Conseils",
+                text:"DRiMS accompagne ses clients dans le développement et la transformation de leur SI, qui est l’un des moteurs essentiels de la transformation stratégique.",
+                datas:[
+                    {
+                    "title" : "L’évolution du SI",
+                    "text" : "La réflexion stratégique sur l'évolution du SI doit être associée à des réflexions opérationnelles sur l'optimisation de la performance de la DSI autour d’une véritable approche d’architecture d’entreprise."
+                    },
+                    {
+                    "title" : "Les nouvelles technologies",
+                    "text" : "Il faut tirer profit des technologies du numérique, en particulier de la mobilité, pour innover et créer de nouveaux services et business model dans une entreprise étendue et en réseau.",
+                        top:83
+                    },
+                    {
+                    "title" : "La transformation de la relation client",
+                    "text" : "Le client et son orientation sont au cœur de la démarche stratégique. La révolution digitale modifie la relation client : la connaissance client et sa valorisation (Big Data, Business Intelligence), l’intelligence marketing, l’accompagnement du parcours Client dans une relation « cross-canal ».",
+                        top:196
+                    },
+                    {
+                    "title" : "Notre savoir-faire",
+                    "text" : "Nous vous proposons différentes solutions, du développement d'applications natives à celui d'applications hybrides en passant par du design adapté (webapp). Nous saurons vous accompagner dans votre choix en fonction de vos besoins, de vos exigences et contraintes spécifiques."
+                    },
+                    {
+                    "title" : "Nos compétences",
+                    "text" : "La gouvernance et le management de la DSI, la transformation et le pilotage des SI, l’architecture SI, le digital et les nouveaux usages."
+                    }]
+                },
+                {
+                id:"technique",
+                    img:"backgrounds/technique.jpg",
+                name:"Technique",
+                text:"Nous nous adaptons à vos problématiques et mettons à votre disposition nos compétences techniques, en architecture et en développement.",
+                datas:[{
+                    "title" : "MICROSOFT",
+                    "text" : "Microsoft .Net 2.0/3.5/4.0, ASP.NET, VB.NET, C#(MVC), WPF (XAML, Silverlight), WCF, ADO.NET, LINQ, Entity Framework, Visual Basic 6, VBA, SHAREPOINT (MOSS), WinForm/WebForm, Visual C++."
+                    },
+                    {
+                    "title" : "JAVA",
+                    "text" : "Java, J2EE, EJB…"
+                    },
+                    {
+                    "title" : "WEB / MOBILE",
+                    "text" : "Angular JS, Script/jQuery, HTML, CSS, AJAX, Telerik, XML, Javascript, PHP4, PHP5, Framework Maven, Spring, Struts, Hibernate, LAMP, CODEIGNITER, Windows Phone, Silverlight, Expression Blend, Objectif C, Android."
+                    },
+                    {
+                    "title" : "BASES DE DONNEES",
+                    "text" : "Oracle (PL/SQL), MS SQLSERVER (Transac Sql) (toutes versions), Access, SYBASE, POSTGRESQL, MySQL."
+                    },
+                    {
+                    "title" : "Décisionnel / BI",
+                    "text" : "SSIS, SSRS, SSAS, Business Object (BO), SAS, MICROSTRATEGY, COGNOS, Talend."
+                    }]
+                }
+]
+        };
+                         
+                         
+                 // Set content of the popin
+                $("#content-panel .item").click(function() {
+                    var targetElement = this;
+                    $(datas.items).each(function( index ) {
+                        if($(targetElement).attr("item-id") == datas.items[index].id){
+                           $("#details-popin h5").html(datas.items[index].name);
+                           $(".text-header").html(datas.items[index].text);
+                            $("#background-image-holder").css('background-image', 'url(imgs/' + datas.items[index].img + ')');
+                            $(".block-a").css("top", datas.items[index].datas[0].top);
+                            $(".block-a h5").html(datas.items[index].datas[0].title);
+                            $(".block-a p").html(datas.items[index].datas[0].text);
+                            $(".block-b").css("top",datas.items[index].datas[1].top);
+                            $(".block-b h5").html(datas.items[index].datas[1].title);
+                            $(".block-b p").html(datas.items[index].datas[1].text);
+                            $(".block-c").css("top",datas.items[index].datas[2].top);
+                            $(".block-c h5").html(datas.items[index].datas[2].title);
+                            $(".block-c p").html(datas.items[index].datas[2].text);
+                            $(".block-d").css("top",datas.items[index].datas[3].top);
+                            $(".block-d h5").html(datas.items[index].datas[3].title);
+                            $(".block-d p").html(datas.items[index].datas[3].text);
+                            $(".block-e").css("top",datas.items[index].datas[4].top);
+                            $(".block-e h5").html(datas.items[index].datas[4].title);
+                            $(".block-e p").html(datas.items[index].datas[4].text);
+                            //$("#background-image-holder").css("background-image","url(imgs/backgrounds/"+ datas.jobs[index].id+ ".jpg)");
+                        }
+                    });
+                });
+        </script>
+    </body>
+</html>
