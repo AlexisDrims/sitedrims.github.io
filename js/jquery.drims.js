@@ -1,3 +1,15 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
 /*
  *  jquery-boilerplate - v3.5.0
  *  A jump-start for jQuery plugins development.
@@ -14,7 +26,7 @@
     var _contentPanel;
     var _sectionWarper;
     var _titleBar;
-    var _MAX_OPACITY_VALUE_ = 0.9;
+    var _MAX_OPACITY_VALUE_ = 1;
     var windowHeight;
 
     "use strict";
@@ -56,16 +68,16 @@
                 if($(document).scrollTop() > $(window).height() - _titleBar.height()){
                     
                     _titleBar.animate({
-                        paddingTop: 20,
-                        paddingBottom: 20
+                        paddingTop: 15,
+                        paddingBottom: 15
                     }, 200, function() {
                         _titleBar.clearQueue().stop();
                     });
                 }else{
                     
                     _titleBar.animate({
-                        paddingTop: 33,
-                        paddingBottom: 33
+                        paddingTop: 20,
+                        paddingBottom: 20
                     }, 200, function() {
                         _titleBar.clearQueue().stop();
                     });
@@ -173,3 +185,27 @@
     }
 
 })( jQuery, window, document );
+
+
+}
+/*
+     FILE ARCHIVED ON 05:21:01 May 19, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:15:56 Mar 15, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 65.538
+  esindex: 0.015
+  CDXLines.iter: 19.074 (3)
+  PetaboxLoader3.resolve: 141.818 (2)
+  LoadShardBlock: 602.522 (3)
+  PetaboxLoader3.datanode: 604.64 (5)
+  captures_list: 691.148
+  exclusion.robots.policy: 0.2
+  exclusion.robots: 0.216
+  load_resource: 462.456 (2)
+*/

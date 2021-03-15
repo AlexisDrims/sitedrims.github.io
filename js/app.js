@@ -11,8 +11,8 @@ $(document).ready(function() {
 $( window ).load(function(){
     
     $.urlParam = function(name){
-	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-	return results[1] || 0;
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
 }
     
     // clear the time if the page made less than 100 sec to load
